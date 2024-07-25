@@ -7,12 +7,12 @@
     <div class="links-side">
         <a href="#" class="navbar-link">Home</a>
         <a href="#about" class="navbar-link">Who am i !</a>
-        <a href="#" class="navbar-link">My skills</a>
-        <a href="#" class="navbar-link">My works</a>
-        <a href="#" class="navbar-link">Reach me</a>
+        <a href="#myskills" class="navbar-link">My skills</a>
+        <a href="#myworks" class="navbar-link">My works</a>
+        <a href="#reachme" class="navbar-link">Reach me</a>
         <a href="#" class="whatsapp-contact">
           <img src="{% static 'images/whatsapp.png' %}" alt="" width="50px" height="50px">
-            <span style="font-size: 15px;">+91 987654321</span>
+            <span style="font-size: 15px;">+91 {{profile.mobile}}</span>
         </a>
     </div>
     <div class="menubar"><i class="fa-solid fa-bars" id="openmenu"></i></div>
@@ -20,15 +20,15 @@
 
 <div class="mobile-links-side" id="mobile-links-side">
   <div><i class="fa-solid fa-x" id="closemenu"></i></div>
-  <a href="">Home</a>
-  <a href="">Who am i !</a>
-  <a href="">My skills</a>
-  <a href="">My works</a>
-  <a href="">Reach me</a>
-  <a href="" class="whatsapp-contact "> 
-    <button class="btn btn-primary">
+  <a href="#">Home</a>
+  <a href="#about">Who am i !</a>
+  <a href="#myskills">My skills</a>
+  <a href="#myworks">My works</a>
+  <a href="#reachme">Reach me</a>
+  <a href="#" class="whatsapp-contact "> 
+    <button class="btn">
     <img src="{% static 'images/whatsapp.png' %}" alt="" width="50px" height="50px">
-      <span style="font-size: 15px;">+91 987654321</span>
+      <span style="font-size: 15px;">+91 {{profile.mobile}}</span>
   </button>    
   </a>
 </div>
