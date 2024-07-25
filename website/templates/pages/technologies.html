@@ -1,0 +1,17 @@
+<div class="container mt-5">
+    <div class="row">
+      <h1 class="mb-5 text-center">
+        <b>My<span class="text-primary"> Skills</span></b>
+      </h1>
+     {% for item in data %}
+     <div class="col-md-2 col-6">
+       <div class="type-card mb-3" >
+         <div class="time-clock-image" style="background-repeat: no-repeat;width: 60px;height: 60px;background-position: center;background-size: contain;background-image: url({{item.image.url}});">
+         </div>
+         <p class="pt-2 mb-0 text-muted">{{item.name}}</p>
+         <p class="mt-0 text-muted">{{item.line2}}</p>
+     </div>
+    </div>
+    {% endfor %}
+  </div>
+ </div>

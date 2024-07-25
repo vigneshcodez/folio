@@ -1,0 +1,30 @@
+{% load static %}
+<div class="container-fluid mt-5 mb-0 p-0 bg-primary" >
+
+    <div class=" text-center d-flex justify-content-center" >
+        <div class=" px-5 rounded-pill py-2 text-white" style="margin-top: 100px !important;background-color: rgba(255, 255, 255, 0.5); font-size: 20px;">Why to choose me !</div>
+    </div>
+    <h1 class="text-white text-center mt-5 mx-3">I have hands-on experience with the variety of websites given below</h1>
+
+    <div class="container mt-5 mb-5 pb-5">
+        <div class="row">
+
+            {% for item in services %}
+
+            <div class="col-md-3 d-flex flex-column align-items-center">
+                <div style="width: 120px;height: 120px;border-radius: 10px;background-color: rgba(255, 255, 255, 1);display: flex;justify-content: center;align-items: center;">
+                <div style="background-repeat: no-repeat;width: 100px;height: 100px;background-position: center;background-size: contain;background-image: url({{item.image.url}});"></div>
+
+                </div>
+                <p class="mt-4 text-white fs-5">{{item.name}}</p>
+            </div>
+
+            {% endfor %}
+
+
+        </div>
+    </div>
+
+</div>
+
+
